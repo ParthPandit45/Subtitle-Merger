@@ -2,11 +2,25 @@
 
 > Losslessly embed matching subtitles into TV episodes and video files in place using FFmpeg without re-encoding.
 
+[![Release](https://img.shields.io/github/v/release/ParthPandit45/Subtitle-Merger?label=Release&color=blue)](https://github.com/ParthPandit45/Subtitle-Merger/releases/latest)
 [![CI](https://github.com/ParthPandit45/Subtitle-Merger/actions/workflows/ci.yml/badge.svg)](https://github.com/ParthPandit45/Subtitle-Merger/actions/workflows/ci.yml)
 [![Tests](https://img.shields.io/badge/tests-25%20passed-brightgreen.svg)]()
-[![Python](https://img.shields.io/badge/python-3.9%20%7C%203.10%20%7C%203.11%20%7C%203.12%20%7C%203.13%20%7C%203.14-blue.svg)]()
+[![Python](https://img.shields.io/badge/python-3.9%20%7C%203.10%20%7C%203.11%20%7C%203.12%20%7C%203.13-blue.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey.svg)]()
+
+---
+
+## Downloads & Releases
+
+Pre-compiled, standalone Windows 64-bit executables are published with each release. No Python installation is required.
+
+| Executable | Platform | Direct Download |
+| :--- | :--- | :--- |
+| `Subtitle-Merger.exe` | Windows x64 | [Download Subtitle-Merger.exe (v1.0.1)](https://github.com/ParthPandit45/Subtitle-Merger/releases/download/v1.0.1/Subtitle-Merger.exe) |
+| `merge_subs.exe` | Windows x64 | [Download merge_subs.exe (v1.0.1)](https://github.com/ParthPandit45/Subtitle-Merger/releases/download/v1.0.1/merge_subs.exe) |
+
+*All releases and historical versions can be viewed on the [GitHub Releases page](https://github.com/ParthPandit45/Subtitle-Merger/releases).*
 
 ---
 
@@ -75,8 +89,8 @@ merge_subs/
 
 ## Installation & Requirements
 
-### Option A: Using the Pre-Compiled Executable (`merge_subs.exe`)
-No Python installation is required! Simply run `dist/merge_subs.exe` directly or copy it anywhere on your system.
+### Option A: Using the Pre-Compiled Executable (`Subtitle-Merger.exe` / `merge_subs.exe`)
+No Python installation is required. Download `Subtitle-Merger.exe` directly from the [Downloads & Releases](#downloads--releases) section above, or run it directly from `dist/`.
 
 ### Option B: Running from Python
 `merge_subs` is built using only the Python standard library. Python 3.9+ is supported.
