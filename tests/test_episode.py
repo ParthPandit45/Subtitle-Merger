@@ -1,5 +1,7 @@
 """Unit tests for episode parsing, normalization, and episode comparison."""
 
+from __future__ import annotations
+
 import unittest
 from merge_subs.episode import episodes, eps_match, norm
 

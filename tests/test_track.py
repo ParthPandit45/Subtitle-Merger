@@ -1,5 +1,7 @@
 """Unit tests for track building, sorting, and default disposition rules."""
 
+from __future__ import annotations
+
 import unittest
 from pathlib import Path
 from merge_subs.matcher import Group

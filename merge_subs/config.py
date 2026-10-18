@@ -1,5 +1,7 @@
 """Configuration constants and language lookups for merge_subs."""
 
+from __future__ import annotations
+
 from pathlib import Path
 
 # Supported video container extensions

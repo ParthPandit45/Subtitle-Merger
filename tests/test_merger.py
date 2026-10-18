@@ -1,5 +1,7 @@
 """Unit tests for FFmpeg command line generation and format mapping."""
 
+from __future__ import annotations
+
 import unittest
 from pathlib import Path
 from merge_subs.merger import build_ffmpeg_command

@@ -1,5 +1,7 @@
 """Unit tests for subtitle matching, grouping, and language detection."""
 
+from __future__ import annotations
+
 import unittest
 from pathlib import Path
 from merge_subs.matcher import detect_lang, Group, choose_group

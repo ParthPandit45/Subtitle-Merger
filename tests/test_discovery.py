@@ -1,5 +1,7 @@
 """Unit tests for FFmpeg discovery logic."""
 
+from __future__ import annotations
+
 import unittest
 from merge_subs.discovery import works, candidate_paths
 

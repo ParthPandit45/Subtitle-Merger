@@ -5,8 +5,10 @@ Embeds all matching subtitles into video files in-place using FFmpeg
 without re-encoding.
 """
 
-__version__ = "1.0.0"
-__author__ = "Google DeepMind Advanced Agentic Coding"
+from __future__ import annotations
+
+__version__ = "1.0.1"
+__author__ = "Parth Pandit"
 
 from merge_subs.config import (
     VIDEO_EXT,
