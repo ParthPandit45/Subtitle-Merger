@@ -1,0 +1,39 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# PyInstaller build artifacts
+build/
+*.spec
+
+# Distribution / packaging
+dist/
+*.egg-info/
+.eggs/
+
+# Temporary / in-place merge leftovers
+*.part
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# Testing & coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE / Editor configuration
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# FFmpeg discovery cached configuration
+.merge_subs_ffmpeg.txt
+
+# Scratch and test fixtures
+test_fixture/
+fina_source.py

@@ -1,0 +1,5 @@
+# Core dependencies:
+# merge_subs uses only the Python standard library for zero-overhead performance.
+
+# Optional fallback helper for users who do not have system FFmpeg installed:
+# imageio-ffmpeg>=0.4.9
