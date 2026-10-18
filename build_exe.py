@@ -2,7 +2,7 @@
 """
 Automated PyInstaller build script for merge_subs.
 
-Builds a self-contained, high-performance Windows executable (merge_subs.exe).
+Builds a self-contained, high-performance Windows executable (Subtitle-Merger.exe).
 Optionally bundles ffmpeg.exe into the single-file binary.
 
 Usage:
@@ -46,7 +46,7 @@ def build_executable(bundle_ffmpeg: bool = False, ffmpeg_path: str | None = None
         "--clean",
         "--onefile",
         "--name",
-        "merge_subs",
+        "Subtitle-Merger",
         "--exclude-module",
         "tkinter",
         "--exclude-module",
@@ -71,22 +71,17 @@ def build_executable(bundle_ffmpeg: bool = False, ffmpeg_path: str | None = None
     if proc.returncode != 0:
         raise RuntimeError(f"PyInstaller build failed with exit code {proc.returncode}")
 
-    exe_name = "merge_subs.exe" if os.name == "nt" else "merge_subs"
+    exe_name = "Subtitle-Merger.exe" if os.name == "nt" else "Subtitle-Merger"
     exe_path = dist_dir / exe_name
 
     if not exe_path.exists():
         raise FileNotFoundError(f"Expected output binary not found at: {exe_path}")
 
-    alt_exe_name = "Subtitle-Merger.exe" if os.name == "nt" else "Subtitle-Merger"
-    alt_exe_path = dist_dir / alt_exe_name
-    shutil.copy2(exe_path, alt_exe_path)
-
     size_mb = exe_path.stat().st_size / (1024 * 1024)
     print("\n" + "=" * 60)
     print("BUILD SUCCESSFUL!")
-    print(f"Primary executable: {exe_path}")
-    print(f"Alias executable:   {alt_exe_path}")
-    print(f"Binary size:        {size_mb:.2f} MB")
+    print(f"Executable output: {exe_path}")
+    print(f"Binary size:       {size_mb:.2f} MB")
     print("=" * 60)
 
     # Verification test

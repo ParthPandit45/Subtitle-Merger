@@ -64,7 +64,7 @@ To verify packaging and build the standalone Windows `.exe`:
 python build_exe.py
 ```
 
-The resulting binary will be placed at `dist/merge_subs.exe`.
+The resulting binary will be placed at `dist/Subtitle-Merger.exe`.
 
 ---
 

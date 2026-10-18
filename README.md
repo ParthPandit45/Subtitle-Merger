@@ -18,7 +18,6 @@ Pre-compiled, standalone Windows 64-bit executables are published with each rele
 | Executable | Platform | Direct Download |
 | :--- | :--- | :--- |
 | `Subtitle-Merger.exe` | Windows x64 | [Download Subtitle-Merger.exe (v1.0.1)](https://github.com/ParthPandit45/Subtitle-Merger/releases/download/v1.0.1/Subtitle-Merger.exe) |
-| `merge_subs.exe` | Windows x64 | [Download merge_subs.exe (v1.0.1)](https://github.com/ParthPandit45/Subtitle-Merger/releases/download/v1.0.1/merge_subs.exe) |
 
 *All releases and historical versions can be viewed on the [GitHub Releases page](https://github.com/ParthPandit45/Subtitle-Merger/releases).*
 
@@ -47,7 +46,7 @@ Pre-compiled, standalone Windows 64-bit executables are published with each rele
   - Automatically locates FFmpeg via `--ffmpeg`, `FFMPEG_PATH`, system `PATH`, saved settings, WinGet packages, Scoop shims, Chocolatey, and standard installation paths.
   - Includes companion `ffprobe` detection for rapid stream verification.
 - **Standalone Windows Executable**:
-  - Single-file executable (`merge_subs.exe`) built with PyInstaller for zero-dependency execution.
+  - Single-file executable (`Subtitle-Merger.exe`) built with PyInstaller for zero-dependency execution.
   - Double-click friendly: launches native Windows directory browser and pauses before closing so you can inspect results.
 
 ---
@@ -75,7 +74,7 @@ merge_subs/
 │   ├── test_discovery.py     # Binary discovery & candidate paths
 │   └── test_merger.py        # FFmpeg command generation & container conversions
 ├── dist/
-│   └── merge_subs.exe        # Standalone pre-compiled Windows executable
+│   └── Subtitle-Merger.exe   # Standalone pre-compiled Windows executable
 ├── build_exe.py              # Automated PyInstaller packaging script
 ├── merge_subs.py             # Root runner script
 ├── pyproject.toml            # PEP 518/621 build configuration & entry points
@@ -89,7 +88,7 @@ merge_subs/
 
 ## Installation & Requirements
 
-### Option A: Using the Pre-Compiled Executable (`Subtitle-Merger.exe` / `merge_subs.exe`)
+### Option A: Using the Pre-Compiled Executable (`Subtitle-Merger.exe`)
 No Python installation is required. Download `Subtitle-Merger.exe` directly from the [Downloads & Releases](#downloads--releases) section above, or run it directly from `dist/`.
 
 ### Option B: Running from Python
@@ -118,7 +117,7 @@ Or download FFmpeg from [gyan.dev](https://www.gyan.dev/ffmpeg/builds/) or [ffmp
 Run without arguments to open a native folder picker dialog:
 ```powershell
 # Using the executable:
-.\dist\merge_subs.exe
+.\dist\Subtitle-Merger.exe
 
 # Or using Python:
 python merge_subs.py
@@ -214,7 +213,7 @@ Season 02/
 
 ## Building the Executable
 
-To rebuild `dist/merge_subs.exe`:
+To rebuild `dist/Subtitle-Merger.exe`:
 
 ```powershell
 # Build standalone executable (auto-detects system ffmpeg at runtime):
