@@ -11,6 +11,8 @@ Usage:
     python build_exe.py --bundle-ffmpeg --ffmpeg-path "C:\\path\\to\\ffmpeg.exe"
 """
 
+from __future__ import annotations
+
 import argparse
 import os
 import shutil
@@ -75,11 +77,16 @@ def build_executable(bundle_ffmpeg: bool = False, ffmpeg_path: str | None = None
     if not exe_path.exists():
         raise FileNotFoundError(f"Expected output binary not found at: {exe_path}")
 
+    alt_exe_name = "Subtitle-Merger.exe" if os.name == "nt" else "Subtitle-Merger"
+    alt_exe_path = dist_dir / alt_exe_name
+    shutil.copy2(exe_path, alt_exe_path)
+
     size_mb = exe_path.stat().st_size / (1024 * 1024)
     print("\n" + "=" * 60)
-    print(f"BUILD SUCCESSFUL!")
-    print(f"Executable output: {exe_path}")
-    print(f"Binary size:       {size_mb:.2f} MB")
+    print("BUILD SUCCESSFUL!")
+    print(f"Primary executable: {exe_path}")
+    print(f"Alias executable:   {alt_exe_path}")
+    print(f"Binary size:        {size_mb:.2f} MB")
     print("=" * 60)
 
     # Verification test

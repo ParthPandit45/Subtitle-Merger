@@ -1,5 +1,7 @@
 """Subtitle file grouping and video-to-subtitle matching logic."""
 
+from __future__ import annotations
+
 import difflib
 import re
 from pathlib import Path

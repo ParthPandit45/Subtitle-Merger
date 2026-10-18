@@ -1,5 +1,7 @@
 """User interface dialogs for folder and file selection."""
 
+from __future__ import annotations
+
 import importlib
 import os
 import subprocess

@@ -1,5 +1,7 @@
 """Episode parsing and title normalization."""
 
+from __future__ import annotations
+
 import re
 
 # S03E01, S04E01E02, S03E12-13, S01E01-E04

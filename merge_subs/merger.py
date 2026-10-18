@@ -1,5 +1,7 @@
 """FFmpeg stream-copy merging engine with verification and in-place replacement."""
 
+from __future__ import annotations
+
 import logging
 import subprocess
 import tempfile
