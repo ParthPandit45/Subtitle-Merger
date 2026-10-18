@@ -1,7 +1,8 @@
-# merge_subs
+# Subtitle-Merger (merge_subs)
 
 > Losslessly embed matching subtitles into TV episodes and video files in place using FFmpeg without re-encoding.
 
+[![CI](https://github.com/ParthPandit45/Subtitle-Merger/actions/workflows/ci.yml/badge.svg)](https://github.com/ParthPandit45/Subtitle-Merger/actions/workflows/ci.yml)
 [![Tests](https://img.shields.io/badge/tests-25%20passed-brightgreen.svg)]()
 [![Python](https://img.shields.io/badge/python-3.9%20%7C%203.10%20%7C%203.11%20%7C%203.12%20%7C%203.13%20%7C%203.14-blue.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)

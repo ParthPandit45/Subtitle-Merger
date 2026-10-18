@@ -10,8 +10,9 @@ readme = "README.md"
 requires-python = ">=3.9"
 license = { text = "MIT" }
 authors = [
-    { name = "Google DeepMind Advanced Agentic Coding" }
+    { name = "Parth Pandit", email = "pp03232422@student.ku.edu.np" }
 ]
+urls = { "Homepage" = "https://github.com/ParthPandit45/Subtitle-Merger", "Repository" = "https://github.com/ParthPandit45/Subtitle-Merger", "Issues" = "https://github.com/ParthPandit45/Subtitle-Merger/issues" }
 keywords = ["subtitles", "ffmpeg", "mkv", "mp4", "video", "remux", "batch"]
 classifiers = [
     "Development Status :: 5 - Production/Stable",

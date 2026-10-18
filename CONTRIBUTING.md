@@ -15,8 +15,8 @@ Thank you for your interest in contributing to `merge_subs`! We welcome contribu
 
 1. Fork and clone the repository:
    ```bash
-   git clone https://github.com/<your-username>/merge_subs.git
-   cd merge_subs
+   git clone https://github.com/ParthPandit45/Subtitle-Merger.git
+   cd Subtitle-Merger
    ```
 
 2. (Optional) Create a virtual environment:
