@@ -221,7 +221,7 @@ def main(argv: list[str] | None = None) -> int:
 
     folder_path = args.root
     if interactive:
-        folder_path = prompt_for_folder()
+        folder_path = pick_folder()
 
     if not folder_path:
         print("No folder selected. Exiting.")
